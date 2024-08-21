@@ -43,6 +43,33 @@ for(let i = 0; i < 10; i++){        // Vòng lặp for
     console.log(`i = ${i}`)
 }
 
-members.forEach(function(mem){
+members.forEach(function(mem){      // for - each (function)
     console.log(mem)
 })
+
+console.log("********")
+
+for(let i = 0; i < members.length - 1; i++){
+    console.log(members[i])
+}
+
+console.log("********")
+
+members.forEach((member) => {       // for - each (no function)
+    console.log(member)
+})
+
+console.log("123456789")
+
+for(let m of members){              // for - of
+    console.log(m)
+}
+
+for(let i in members){              // for - in: index
+    console.log(`i = ${i}`)
+}
+
+members.forEach((member, index, array) => {     // Combine member, index
+    console.log(`${index + 1} is ${member}`)
+})
+
